@@ -8,42 +8,42 @@ namespace Maze
 {
     class Program
     {
-        static int Room1(int room_number)
+        static int Room0(int room_number)
         {
-                Console.WriteLine("");
-                Console.WriteLine("▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄");
-                Console.WriteLine("█╔═════╣ n ╠═════╗█");
-                Console.WriteLine("█║               ║█");
-                Console.WriteLine("█║       ▲       ╩█");
-                Console.WriteLine("█║       ☻  ►    e");
-                Console.WriteLine("█║               ╦█");
-                Console.WriteLine("█║               ║█");
-                Console.WriteLine("█╚═══════════════╝█");
-                Console.WriteLine("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀");
-                Console.WriteLine("");
-                Console.WriteLine("There is 2 doors in your room: (n)orth,(e)ast, where do you want to go ? ");
+            Console.WriteLine("");
+            Console.WriteLine("▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄");
+            Console.WriteLine("█╔═════╣ n ╠═════╗█");
+            Console.WriteLine("█║               ║█");
+            Console.WriteLine("█║       ▲       ╩█");
+            Console.WriteLine("█║       ☻  ►    e");
+            Console.WriteLine("█║               ╦█");
+            Console.WriteLine("█║               ║█");
+            Console.WriteLine("█╚═══════════════╝█");
+            Console.WriteLine("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀");
+            Console.WriteLine("");
+            Console.WriteLine("There is 2 doors in your room: (n)orth,(e)ast, where do you want to go ? ");
 
-                string choice = Console.ReadLine();
-                if (choice == "n")
-                {
-                    Console.Clear();
-                    Console.WriteLine("> going to north...");
-                    room_number = 4;
-                }
-                else if (choice == "e")
-                {
-                    Console.Clear();
-                    Console.WriteLine("> going to east...");
-                    room_number = 2;
-                }
-                else
-                {
-                    Console.WriteLine("THIS CHOICE DOESN'T EXIST!");
-                }
+            string choice = Console.ReadLine();
+            if (choice == "n")
+            {
+                Console.Clear();
+                Console.WriteLine("> going to north...");
+                room_number = 3;
+            }
+            else if (choice == "e")
+            {
+                Console.Clear();
+                Console.WriteLine("> going to east...");
+                room_number = 1;
+            }
+            else
+            {
+                Console.WriteLine("THIS CHOICE DOESN'T EXIST!");
+            }
             return room_number;
         }
 
-        static int Room2(int room_number)
+        static int Room1(int room_number)
         {
             Console.WriteLine("");
             Console.WriteLine("▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄");
@@ -63,19 +63,19 @@ namespace Maze
             {
                 Console.Clear();
                 Console.WriteLine("> going to north...");
-                room_number = 5;
+                room_number = 4;
             }
             else if (choice == "w")
             {
                 Console.Clear();
                 Console.WriteLine("> going to west...");
-                room_number = 1;
+                room_number = 0;
             }
             else if (choice == "e")
             {
                 Console.Clear();
                 Console.WriteLine("> going to east...");
-                room_number = 3;
+                room_number = 2;
             }
             else
             {
@@ -84,7 +84,7 @@ namespace Maze
             return room_number;
         }
 
-        static int Room3(int room_number)
+        static int Room2(int room_number)
         {
             //TODO: complete
             Console.Clear(); Console.WriteLine("");
@@ -104,19 +104,19 @@ namespace Maze
             {
                 Console.Clear();
                 Console.WriteLine("> Going to north...");
-                room_number = 6;
+                room_number = 5;
             }
             else if (choice == "w")
             {
                 Console.Clear();
                 Console.WriteLine("> Going to west...");
-                room_number = 2;
+                room_number = 1;
             }
             return room_number;
         }
 
-        static int Room5(int room_number)
-        { 
+        static int Room4(int room_number)
+        {
             //TODO: complete
             Console.WriteLine("88.._|      | `-.  | `.  -_-_ _-_  _-  _- -_ -  .'|   |.'|     |  _..88");
             Console.WriteLine("88   `-.._  |    |`!  |`.  -_ -__ -_ _- _-_-  .'  |.;'   |   _.!-'|  88");
@@ -156,7 +156,7 @@ namespace Maze
             {
                 Console.Clear();
                 Console.WriteLine("> Going to south...");
-                room_number = 2;
+                room_number = 1;
             }
             return room_number;
         }
@@ -178,25 +178,25 @@ namespace Maze
             Console.WriteLine("You are lost inside a Maze, try to escape...");
             Console.WriteLine("");
             bool gameRunning = true;
-            int room_number = 2;
+            int room_number = 1;
             while (gameRunning)
             {
-                if (room_number == 1)
+                if (room_number == 0)
+                {
+                    room_number = Room0(room_number);
+                }
+
+
+                else if (room_number == 1)
                 {
                     room_number = Room1(room_number);
                 }
-
 
                 else if (room_number == 2)
                 {
                     room_number = Room2(room_number);
                 }
-
                 else if (room_number == 3)
-                {
-                    room_number = Room3(room_number);
-                }
-                else if (room_number == 4)
                 {
                     Console.WriteLine("               ...");
                     Console.WriteLine("             ;::::;");
@@ -224,11 +224,11 @@ namespace Maze
                     Console.ReadKey();
                     gameRunning = false;
                 }
-                else if (room_number == 5)
+                else if (room_number == 4)
                 {
-                    room_number = Room5(room_number);
+                    room_number = Room4(room_number);
                 }
-                else if (room_number == 6)
+                else if (room_number == 5)
                 {
                     Console.WriteLine("                           (   )");
                     Console.WriteLine("                          (    )");
