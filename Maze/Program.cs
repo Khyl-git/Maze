@@ -8,6 +8,159 @@ namespace Maze
 {
     class Program
     {
+        static int Room1(int room_number)
+        {
+                Console.WriteLine("");
+                Console.WriteLine("▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄");
+                Console.WriteLine("█╔═════╣ n ╠═════╗█");
+                Console.WriteLine("█║               ║█");
+                Console.WriteLine("█║       ▲       ╩█");
+                Console.WriteLine("█║       ☻  ►    e");
+                Console.WriteLine("█║               ╦█");
+                Console.WriteLine("█║               ║█");
+                Console.WriteLine("█╚═══════════════╝█");
+                Console.WriteLine("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀");
+                Console.WriteLine("");
+                Console.WriteLine("There is 2 doors in your room: (n)orth,(e)ast, where do you want to go ? ");
+
+                string choice = Console.ReadLine();
+                if (choice == "n")
+                {
+                    Console.Clear();
+                    Console.WriteLine("> going to north...");
+                    room_number = 4;
+                }
+                else if (choice == "e")
+                {
+                    Console.Clear();
+                    Console.WriteLine("> going to east...");
+                    room_number = 2;
+                }
+                else
+                {
+                    Console.WriteLine("THIS CHOICE DOESN'T EXIST!");
+                }
+            return room_number;
+        }
+
+        static int Room2(int room_number)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄");
+            Console.WriteLine("█╔═════╣ n ╠═════╗█");
+            Console.WriteLine("█║               ║█");
+            Console.WriteLine("█╩       ▲       ╩█");
+            Console.WriteLine(" w    ◄  ☻  ►    e");
+            Console.WriteLine("█╦               ╦█");
+            Console.WriteLine("█║               ║█");
+            Console.WriteLine("█╚═══════════════╝█");
+            Console.WriteLine("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀");
+            Console.WriteLine("");
+            Console.WriteLine("There is 3 doors in your room: (n)orth,(w)est, (e)ast, where do you want to go ? ");
+
+            string choice = Console.ReadLine();
+            if (choice == "n")
+            {
+                Console.Clear();
+                Console.WriteLine("> going to north...");
+                room_number = 5;
+            }
+            else if (choice == "w")
+            {
+                Console.Clear();
+                Console.WriteLine("> going to west...");
+                room_number = 1;
+            }
+            else if (choice == "e")
+            {
+                Console.Clear();
+                Console.WriteLine("> going to east...");
+                room_number = 3;
+            }
+            else
+            {
+                Console.WriteLine("THIS CHOICE DOESN'T EXIST!");
+            }
+            return room_number;
+        }
+
+        static int Room3(int room_number)
+        {
+            //TODO: complete
+            Console.Clear(); Console.WriteLine("");
+            Console.WriteLine("▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄");
+            Console.WriteLine("█╔═════╣ n ╠═════╗█");
+            Console.WriteLine("█║               ║█");
+            Console.WriteLine("█╩       ▲       ║█");
+            Console.WriteLine(" w    ◄  ☻       ║█");
+            Console.WriteLine("█╦               ║█");
+            Console.WriteLine("█║               ║█");
+            Console.WriteLine("█╚═══════════════╝█");
+            Console.WriteLine("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀");
+            Console.WriteLine("");
+            Console.WriteLine("There is two doors in your room: (n)orth, (w)est, where do you want to go ?");
+            string choice = Console.ReadLine();
+            if (choice == "n")
+            {
+                Console.Clear();
+                Console.WriteLine("> Going to north...");
+                room_number = 6;
+            }
+            else if (choice == "w")
+            {
+                Console.Clear();
+                Console.WriteLine("> Going to west...");
+                room_number = 2;
+            }
+            return room_number;
+        }
+
+        static int Room5(int room_number)
+        { 
+            //TODO: complete
+            Console.WriteLine("88.._|      | `-.  | `.  -_-_ _-_  _-  _- -_ -  .'|   |.'|     |  _..88");
+            Console.WriteLine("88   `-.._  |    |`!  |`.  -_ -__ -_ _- _-_-  .'  |.;'   |   _.!-'|  88");
+            Console.WriteLine("88      | `-!._  |  `;!  ;. _______________ ,'| .-' |   _!.i'     |  88");
+            Console.WriteLine("88..__  |     |`-!._ | `.| |_______________||.\"'|  _!.;' | _ | ..88");
+            Console.WriteLine("88   |``\"..__ |    |`\";.| i|_|MMMMMMMMMMM|_|'| _!-|   |   _|..-|'    88");
+            Console.WriteLine("88   |      |``--..|_ | `;!|l|MMoMMMMoMMM|1|.'j   |_..!-'|     |     88");
+            Console.WriteLine("88   |      |    |   |`-,!_|_|MMMMPfYMMMM|_||.!-;'  |    |     |     88");
+            Console.WriteLine("88___|______|____!.,.!,.!,!|d|MMMoMloloMM|p|,!,.!.,.!..__|_____|_____88");
+            Console.WriteLine("88      |     |    |  |  | |_|MMMMbddMMMM|_|| |   |   |    |      |  88");
+            Console.WriteLine("88      |     |    |..!-;'i|r|MPYMoMMMMoM|r| |`-..|   |    |      |  88");
+            Console.WriteLine("88      |    _!.-j'  | _!,\"|_|M<>MMMMoMMM|_|| !._ |  `i - !.._ |    |88");
+            Console.WriteLine("88     _!.-'|    | _.\" |!; |1|MbdMMoMMMMM|l|`.| `-._ |    |``-.._ |  88");
+            Console.WriteLine("88..-i'     |  _.''|  !-| !|_|MMMoMMMMoMM|_|.|`-. | ``._ |     |``\"..88");
+            Console.WriteLine("88   |      |.|    |.|  !| |u|MoMMMMoMMMM|n||`. |`!   | `\".    |     88");
+            Console.WriteLine("88   |  _.-'  |  .'  |.' |/|_|MMMMoMMMMoM|_|! |`!  `,.|    |-._|     88");
+            Console.WriteLine("88  _!\"'|     !.' |  .'| .'|[@]MMMMMMMMMMM[@] \\|  `. | `._ |   `-._  88");
+            Console.WriteLine("88-'    |   .'   |.|  |/| /                 \\|`.  |`!    |.|      |`-88");
+            Console.WriteLine("88      |_.'|   .' | .' |/                   \\  \\ |  `.  | `._-Lee|  88");
+            Console.WriteLine("88     .'   | .'   |/|  /                     \\ |`!   |`.|    `.  |  88");
+            Console.WriteLine("88  _.'     !'|   .' | /                       \\|  `  |  `.    |`.|  88");
+            Console.WriteLine("88 vanishing point 888888888888888888888888888888888888888888888(FL)888");
+            Console.WriteLine("");
+            Console.WriteLine("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄");
+            Console.WriteLine("█╔═══════════════╗█");
+            Console.WriteLine("█║               ║█");
+            Console.WriteLine("█║               ║█");
+            Console.WriteLine("█║       ☻       ║█");
+            Console.WriteLine("█║       ▼       ║█");
+            Console.WriteLine("█║               ║█");
+            Console.WriteLine("█╚═════╣ s ╠═════╝█");
+            Console.WriteLine("▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀");
+            Console.WriteLine("");
+            Console.WriteLine("There is only one door in this room: (s)outh, where do you want to go?");
+            string choice = Console.ReadLine();
+            if (choice == "s")
+            {
+                Console.Clear();
+                Console.WriteLine("> Going to south...");
+                room_number = 2;
+            }
+            return room_number;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("");
@@ -30,104 +183,18 @@ namespace Maze
             {
                 if (room_number == 1)
                 {
-                    Console.WriteLine("");
-                    Console.WriteLine("▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄");
-                    Console.WriteLine("█╔═════╣ n ╠═════╗█");
-                    Console.WriteLine("█║               ║█");
-                    Console.WriteLine("█║       ▲       ╩█");
-                    Console.WriteLine("█║       ☻  ►    e");
-                    Console.WriteLine("█║               ╦█");
-                    Console.WriteLine("█║               ║█");
-                    Console.WriteLine("█╚═══════════════╝█");
-                    Console.WriteLine("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀");
-                    Console.WriteLine("");
-                    Console.WriteLine("There is 2 doors in your room: (n)orth,(e)ast, where do you want to go ? ");
-
-                    string choice = Console.ReadLine();
-                    if (choice == "n")
-                    {
-                        Console.Clear();
-                        Console.WriteLine("> going to north...");
-                        room_number = 4;
-                    }
-                    else if (choice == "e")
-                    {
-                        Console.Clear();
-                        Console.WriteLine("> going to east...");
-                        room_number = 2;
-                    }
-                    else
-                    {
-                        Console.WriteLine("THIS CHOICE DOESN'T EXIST!");
-                    }
+                    room_number = Room1(room_number);
                 }
+
+
                 else if (room_number == 2)
                 {
-                    Console.WriteLine("");
-                    Console.WriteLine("▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄");
-                    Console.WriteLine("█╔═════╣ n ╠═════╗█");
-                    Console.WriteLine("█║               ║█");
-                    Console.WriteLine("█╩       ▲       ╩█");
-                    Console.WriteLine(" w    ◄  ☻  ►    e");
-                    Console.WriteLine("█╦               ╦█");
-                    Console.WriteLine("█║               ║█");
-                    Console.WriteLine("█╚═══════════════╝█");
-                    Console.WriteLine("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀");
-                    Console.WriteLine("");
-                    Console.WriteLine("There is 3 doors in your room: (n)orth,(w)est, (e)ast, where do you want to go ? ");
-
-                    string choice = Console.ReadLine();
-                    if (choice == "n")
-                    {
-                        Console.Clear();
-                        Console.WriteLine("> going to north...");
-                        room_number = 5;
-                    }
-                    else if (choice == "w")
-                    {
-                        Console.Clear();
-                        Console.WriteLine("> going to west...");
-                        room_number = 1;
-                    }
-                    else if (choice == "e")
-                    {
-                        Console.Clear();
-                        Console.WriteLine("> going to east...");
-                        room_number = 3;
-                    }
-                    else
-                    {
-                        Console.WriteLine("THIS CHOICE DOESN'T EXIST!");
-                    }
+                    room_number = Room2(room_number);
                 }
+
                 else if (room_number == 3)
                 {
-                    //TODO: complete
-                    Console.Clear(); Console.WriteLine("");
-                    Console.WriteLine("▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄");
-                    Console.WriteLine("█╔═════╣ n ╠═════╗█");
-                    Console.WriteLine("█║               ║█");
-                    Console.WriteLine("█╩       ▲       ║█");
-                    Console.WriteLine(" w    ◄  ☻       ║█");
-                    Console.WriteLine("█╦               ║█");
-                    Console.WriteLine("█║               ║█");
-                    Console.WriteLine("█╚═══════════════╝█");
-                    Console.WriteLine("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀");
-                    Console.WriteLine("");
-                    Console.WriteLine("There is two doors in your room: (n)orth, (w)est, where do you want to go ?");
-                    string choice = Console.ReadLine();
-                    if (choice == "n")
-                    {
-                        Console.Clear();
-                        Console.WriteLine("> Going to north...");
-                        room_number = 6;
-                    }
-                    else if (choice == "w")
-                    {
-                        Console.Clear();
-                        Console.WriteLine("> Going to west...");
-                        room_number = 2;
-                    }
+                    room_number = Room3(room_number);
                 }
                 else if (room_number == 4)
                 {
@@ -159,47 +226,7 @@ namespace Maze
                 }
                 else if (room_number == 5)
                 {
-                    //TODO: complete
-                    Console.WriteLine("88.._|      | `-.  | `.  -_-_ _-_  _-  _- -_ -  .'|   |.'|     |  _..88");
-                    Console.WriteLine("88   `-.._  |    |`!  |`.  -_ -__ -_ _- _-_-  .'  |.;'   |   _.!-'|  88");
-                    Console.WriteLine("88      | `-!._  |  `;!  ;. _______________ ,'| .-' |   _!.i'     |  88");
-                    Console.WriteLine("88..__  |     |`-!._ | `.| |_______________||.\"'|  _!.;' | _ | ..88");
-                    Console.WriteLine("88   |``\"..__ |    |`\";.| i|_|MMMMMMMMMMM|_|'| _!-|   |   _|..-|'    88");
-                    Console.WriteLine("88   |      |``--..|_ | `;!|l|MMoMMMMoMMM|1|.'j   |_..!-'|     |     88");
-                    Console.WriteLine("88   |      |    |   |`-,!_|_|MMMMPfYMMMM|_||.!-;'  |    |     |     88");
-                    Console.WriteLine("88___|______|____!.,.!,.!,!|d|MMMoMloloMM|p|,!,.!.,.!..__|_____|_____88");
-                    Console.WriteLine("88      |     |    |  |  | |_|MMMMbddMMMM|_|| |   |   |    |      |  88");
-                    Console.WriteLine("88      |     |    |..!-;'i|r|MPYMoMMMMoM|r| |`-..|   |    |      |  88");
-                    Console.WriteLine("88      |    _!.-j'  | _!,\"|_|M<>MMMMoMMM|_|| !._ |  `i - !.._ |    |88");
-                    Console.WriteLine("88     _!.-'|    | _.\" |!; |1|MbdMMoMMMMM|l|`.| `-._ |    |``-.._ |  88");
-                    Console.WriteLine("88..-i'     |  _.''|  !-| !|_|MMMoMMMMoMM|_|.|`-. | ``._ |     |``\"..88");
-                    Console.WriteLine("88   |      |.|    |.|  !| |u|MoMMMMoMMMM|n||`. |`!   | `\".    |     88");
-                    Console.WriteLine("88   |  _.-'  |  .'  |.' |/|_|MMMMoMMMMoM|_|! |`!  `,.|    |-._|     88");
-                    Console.WriteLine("88  _!\"'|     !.' |  .'| .'|[@]MMMMMMMMMMM[@] \\|  `. | `._ |   `-._  88");
-                    Console.WriteLine("88-'    |   .'   |.|  |/| /                 \\|`.  |`!    |.|      |`-88");
-                    Console.WriteLine("88      |_.'|   .' | .' |/                   \\  \\ |  `.  | `._-Lee|  88");
-                    Console.WriteLine("88     .'   | .'   |/|  /                     \\ |`!   |`.|    `.  |  88");
-                    Console.WriteLine("88  _.'     !'|   .' | /                       \\|  `  |  `.    |`.|  88");
-                    Console.WriteLine("88 vanishing point 888888888888888888888888888888888888888888888(FL)888");
-                    Console.WriteLine("");
-                    Console.WriteLine("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄");
-                    Console.WriteLine("█╔═══════════════╗█");
-                    Console.WriteLine("█║               ║█");
-                    Console.WriteLine("█║               ║█");
-                    Console.WriteLine("█║       ☻       ║█");
-                    Console.WriteLine("█║       ▼       ║█");
-                    Console.WriteLine("█║               ║█");
-                    Console.WriteLine("█╚═════╣ s ╠═════╝█");
-                    Console.WriteLine("▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀");
-                    Console.WriteLine("");
-                    Console.WriteLine("There is only one door in this room: (s)outh, where do you want to go?");
-                    string choice = Console.ReadLine();
-                    if (choice == "s")
-                    {
-                        Console.Clear();
-                        Console.WriteLine("> Going to south...");
-                        room_number = 2;
-                    }
+                    room_number = Room5(room_number);
                 }
                 else if (room_number == 6)
                 {
